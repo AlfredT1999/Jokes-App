@@ -1,11 +1,7 @@
 ﻿using JokesWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace JokesWebApp.Controllers
 {
@@ -18,6 +14,7 @@ namespace JokesWebApp.Controllers
             _logger = logger;
         }
 
+        // These are the events that occures when we press click to something:
         public IActionResult Index()
         {
             return View();
