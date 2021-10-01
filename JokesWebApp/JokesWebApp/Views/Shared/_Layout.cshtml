@@ -24,11 +24,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <!-- Add a new link called Jokes. Inside the attributes of the tag <a> in the statement aps-controller, 
+                        <!-- Add a new link called Jokes. Inside the attributes of the tag <a> in the statement aps-controller,
                             I need to put the controller that previously I created, which is Jokes. And in the asp-action I write
                             Index which is the method inside the JokeController. -->
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Jokes" asp-action="Index">Jokes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Jokes" asp-action="ShowSearchForm">Search</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
